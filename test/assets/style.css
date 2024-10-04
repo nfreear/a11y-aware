@@ -4,6 +4,24 @@ button {
   padding: .5rem 1rem;
 }
 
+input {
+  font-size: inherit;
+  padding: .3rem .5rem;
+}
+
+[ role = listbox ] {
+  background: #eee;
+  border: 1px solid gray;
+  margin: 0 1rem;
+  padding: .5rem 2rem;
+  position: absolute;
+}
+
+p,
+.para {
+  margin: 1rem 0;
+}
+
 body {
   margin: auto;
   max-width: 30rem;
