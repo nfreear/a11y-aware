@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/style.css">
+
+  <title> Good – `a11y-aware`>` element </title>
+
+  <h1> Good – <tt>&lt;a11y-aware></tt> element</h1>
+
+  <a11y-aware>
+    <p>
+      <button aria-controls="helloDialog" aria-expanded="false"> Click me! </button>
+    </p>
+
+    <dialog id="helloDialog">
+      <form method="dialog">
+        <p> Hello world! I'm a native <tt>&lt;dialog></tt> element. </p>
+        <p>
+          <button>Close</button>
+        </p>
+      </form>
+    </dialog>
+  </a11y-aware>
+
+  <script type="module" src="../lib/element.js"></script>
+</html>

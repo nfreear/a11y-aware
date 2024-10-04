@@ -1,0 +1,11 @@
+
+button {
+  font-size: larger;
+  padding: .5rem 1rem;
+}
+
+body {
+  margin: auto;
+  max-width: 30rem;
+  padding: 0 1rem;
+}
