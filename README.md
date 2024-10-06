@@ -1,6 +1,9 @@
 
 # A11yAware
 
+[![Pages Deploy][ci-badge]][ci]
+[![NPM Version][npm-badge]][npm]
+
 I'm the micro-library that rewards semantic HTML5 and [minimal][rule1], [well-formed][conform] [ARIA][]!
 
 Given the HTML:
@@ -12,7 +15,7 @@ Given the HTML:
   aria-expanded="false"> Click me! </button>
 
 <dialog id="myDialog">
-  <p> Hello, I’m a dialog box! </p>
+  <p> Hello, I’m a native dialog box! </p>
 </dialog>
 ```
 
@@ -26,10 +29,22 @@ const buttonProxy = new A11yAware('#triggerButton');
 buttonProxy.addToggleListener();
 ```
 
-… To show the dialog box, while correctly updating the state of the ARIA attributes, for example, `aria-expanded`.
+… To show and hide the dialog box, while correctly updating the state of the ARIA attributes, for example, `aria-expanded`.
 
 Neat, huh?
 
+* Demo: [nfreear.github.io/a11y-aware/test][ghp]
+
+## Custom element
+
+```
+<a11y-aware>
+  <button … > … </button>
+  <dialog … > … </dialog>
+</a11y-aware>
+```
+
+[ghp]: https://nfreear.github.io/a11y-aware/test/good.html
 [rule1]: https://www.w3.org/TR/using-aria/#rule1
   "First rule of ARIA - Don't use ARIA!"
 [guide]: https://www.w3.org/TR/html-aria/#author-guidance-to-avoid-incorrect-use-of-aria
@@ -40,3 +55,8 @@ Neat, huh?
 [pen]: https://codepen.io/nfreear/pen/VwoeGpx
 [accname]: https://github.com/google/accessible-name
 [dom-accessibility-api]: https://github.com/eps1lon/dom-accessibility-api
+
+[ci]: https://github.com/nfreear/a11y-aware/actions/workflows/node.js.yml
+[ci-badge]: https://github.com/nfreear/a11y-aware/actions/workflows/node.js.yml/badge.svg
+[npm]: https://www.npmjs.com/package/a11y-aware
+[npm-badge]: https://img.shields.io/npm/v/a11y-aware

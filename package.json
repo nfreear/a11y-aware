@@ -1,13 +1,17 @@
 {
   "name": "a11y-aware",
+  "version": "0.2.0",
   "description": "A micro-library that rewards semantic HTML5 and minimal, well-formed ARIA!",
+  "license": "MIT",
   "browser": "lib/index.js",
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
     "./element": "./lib/element.js"
   },
-  "author": "© 2024 Nick Freear",
+  "author": "Nick Freear",
+  "keywords": [ "Accessibility", "A11y", "ARIA" ],
+  "files": [ "lib/*", "test/*" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/nfreear/a11y-aware.git"
@@ -18,6 +22,7 @@
   },
   "scripts": {
     "start": "servor",
+    "fix": "semistandard --fix",
     "test": "semistandard"
   }
 }
