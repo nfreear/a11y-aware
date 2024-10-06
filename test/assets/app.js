@@ -1,4 +1,5 @@
 
+import 'my-codepen-button';
 import '../../lib/element.js';
 import A11yAware from '../../lib/index.js';
 

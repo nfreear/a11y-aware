@@ -9,8 +9,10 @@
 
   <h1> Good – <tt>&lt;a11y-aware></tt> element</h1>
 
+<h2> Native dialog </h2>
+
+<my-codepen-button import="https://nfreear.github.io/a11y-aware/lib/element.js">
   <a11y-aware>
-    <h2> Native dialog </h2>
     <p>
       <button aria-controls="helloDialog" aria-expanded="false"> Click me! </button>
     </p>
@@ -24,6 +26,7 @@
       </form>
     </dialog>
   </a11y-aware>
+</my-codepen-button>
 
   <a11y-aware>
     <h2> ARIA combobox </h2>
@@ -38,6 +41,12 @@
       </ul>
     </div>
   </a11y-aware>
+
+  <script type="importmap"> {
+    "imports": {
+      "my-codepen-button": "https://nfreear.github.io/elements/my.js?my-codepen-button"
+    }
+  } </script>
 
   <script type="module" src="assets/app.js?element"></script>
 </html>
