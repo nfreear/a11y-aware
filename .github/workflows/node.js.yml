@@ -47,6 +47,10 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
+    - name: Remove 'node_modules'
+      run: |
+        rm -rf node_modules
+        rm -rf package-lock.json
     - name: Setup Pages
       uses: actions/configure-pages@v5
     - name: Upload artifact
