@@ -4,7 +4,7 @@
 [![Pages Deploy][ci-badge]][ci]
 [![NPM Version][npm-badge]][npm]
 
-I'm the micro-library that rewards semantic HTML5 and [minimal][rule1], [well-formed][conform] [ARIA][]!
+I'm the micro-library that rewards accessible, semantic HTML5 and [minimal][rule1], [well-formed][conform] [ARIA][]!
 
 Given the HTML:
 
@@ -34,17 +34,29 @@ buttonProxy.addToggleListener();
 Neat, huh?
 
 * Demo: [nfreear.github.io/a11y-aware/test][ghp]
+* CDN: [unpkg.com/a11y-aware][up]
 
 ## Custom element
 
-```
+```html
 <a11y-aware>
   <button … > … </button>
   <dialog … > … </dialog>
 </a11y-aware>
 ```
 
+## Support
+
+The library recognises and/or supports(*) the following HTML elements and attributes:
+
+* [`<dialog>`][dlg-elem] element, and the `show()`, `showModal()` and `close()` methods on the `HTMLDialogElement` class,
+* [`hidden`][hidden] global attribute,
+* [`aria-controls`][aria-controls], [`aria-expanded`][aria-expanded] attributes,
+* [`role="listbox"`][listbox], `role="dialog"` …
+
+[up]: https://unpkg.com/a11y-aware
 [ghp]: https://nfreear.github.io/a11y-aware/test/good.html
+[pen demo]: https://codepen.io/nfreear/pen/poMbKzj
 [rule1]: https://www.w3.org/TR/using-aria/#rule1
   "First rule of ARIA - Don't use ARIA!"
 [guide]: https://www.w3.org/TR/html-aria/#author-guidance-to-avoid-incorrect-use-of-aria
@@ -52,7 +64,14 @@ Neat, huh?
   "ARIA in HTML: Document conformance…"
 [aria]: https://www.w3.org/TR/wai-aria-1.2/
   "Accessible Rich Internet Applications (WAI-ARIA) 1.2, W3C Recommendation, 06 June 2023"
-[pen]: https://codepen.io/nfreear/pen/VwoeGpx
+[aria-controls]: https://w3.org/TR/wai-aria-1.2/#aria-controls
+[aria-expanded]: https://w3.org/TR/wai-aria-1.2/#aria-expanded
+[listbox]: https://w3.org/TR/wai-aria-1.2/#listbox
+[dlg-elem]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+[hidden]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden
+  "'hidden' global attribute, MDN"
+[spec-hddn]: https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute
+[pen orig]: https://codepen.io/nfreear/pen/VwoeGpx
 [accname]: https://github.com/google/accessible-name
 [dom-accessibility-api]: https://github.com/eps1lon/dom-accessibility-api
 
