@@ -45,13 +45,22 @@ Neat, huh?
 </a11y-aware>
 ```
 
+## Guided mode
+
+```html
+<a11y-aware guided="true">
+  <button … > … </button>
+  <dialog … > … </dialog>
+</a11y-aware>
+```
+
 ## Support
 
-The library recognises and/or supports(*) the following HTML elements and attributes:
+The library tests for and/or supports(*) the following HTML elements and attributes:
 
 * [`<dialog>`][dlg-elem] element, and the `show()`, `showModal()` and `close()` methods on the `HTMLDialogElement` class,
 * [`hidden`][hidden] global attribute,
-* [`aria-controls`][aria-controls], [`aria-expanded`][aria-expanded] attributes,
+* [`aria-controls`][aria-controls], [`aria-expanded`][aria-expanded] and [`aria-haspopup`][aria-haspopup] attributes,
 * [`role="listbox"`][listbox], `role="dialog"` …
 
 [up]: https://unpkg.com/a11y-aware
@@ -66,6 +75,7 @@ The library recognises and/or supports(*) the following HTML elements and attrib
   "Accessible Rich Internet Applications (WAI-ARIA) 1.2, W3C Recommendation, 06 June 2023"
 [aria-controls]: https://w3.org/TR/wai-aria-1.2/#aria-controls
 [aria-expanded]: https://w3.org/TR/wai-aria-1.2/#aria-expanded
+[aria-haspopup]: https://w3.org/TR/wai-aria-1.2/#aria-haspopup
 [listbox]: https://w3.org/TR/wai-aria-1.2/#listbox
 [dlg-elem]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 [hidden]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden
