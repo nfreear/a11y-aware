@@ -1,6 +1,6 @@
 
 import 'my-codepen-button';
-import A11yAware from '../../index.js';
+import A11yAware from 'a11y-aware';
 
 if (/element/.test(import.meta.url)) {
   console.debug('app.js ~ element mode');

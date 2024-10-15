@@ -24,11 +24,18 @@
     </dialog>
   </a11y-aware>
 
+
   <script type="importmap"> {
     "imports": {
+      "a11y-aware": "./../index.js",
       "my-codepen-button": "https://nfreear.github.io/elements/my.js?my-codepen-button"
     }
   } </script>
 
-  <script type="module" src="assets/app.js?element"></script>
+  <script type="module">
+    import 'a11y-aware'
+    import 'my-codepen-button'
+  </script>
+
+  <!-- <script type="module" src="assets/app.js?element"></script> -->
 </html>

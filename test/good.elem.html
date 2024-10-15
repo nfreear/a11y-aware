@@ -11,10 +11,11 @@
 
 <h2> Native dialog </h2>
 
-<my-codepen-button import="https://nfreear.github.io/a11y-aware/lib/element.js">
+<my-codepen-button import="https://nfreear.github.io/a11y-aware/index.js">
   <a11y-aware>
     <p>
-      <button aria-controls="helloDialog" aria-expanded="false"> Click me! </button>
+      <button aria-controls="helloDialog" aria-expanded="false" aria-haspopup="dialog"
+      > Click me! </button>
     </p>
 
     <dialog id="helloDialog" aria-modal="true">
@@ -42,11 +43,18 @@
     </div>
   </a11y-aware>
 
+
   <script type="importmap"> {
     "imports": {
+      "a11y-aware": "./../index.js",
       "my-codepen-button": "https://nfreear.github.io/elements/my.js?my-codepen-button"
     }
   } </script>
 
-  <script type="module" src="assets/app.js?element"></script>
+  <script type="module">
+    import 'a11y-aware'
+    import 'my-codepen-button'
+  </script>
+
+  <!-- <script type="module" src="assets/app.js?element"></script> -->
 </html>
