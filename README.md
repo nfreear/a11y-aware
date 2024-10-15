@@ -38,6 +38,8 @@ Neat, huh?
 
 ## Custom element
 
+See the [custom element][] demo.
+
 ```html
 <a11y-aware>
   <button … > … </button>
@@ -46,6 +48,8 @@ Neat, huh?
 ```
 
 ## Guided mode
+
+See the [guided][] demo.
 
 ```html
 <a11y-aware guided="true">
@@ -65,6 +69,8 @@ The library tests for and/or supports(*) the following HTML elements and attribu
 
 [up]: https://unpkg.com/a11y-aware
 [ghp]: https://nfreear.github.io/a11y-aware/test/good.html
+[custom element]: https://nfreear.github.io/a11y-aware/test/good.elem.html
+[guided]: https://nfreear.github.io/a11y-aware/test/good.elem.html
 [pen demo]: https://codepen.io/nfreear/pen/poMbKzj
 [rule1]: https://www.w3.org/TR/using-aria/#rule1
   "First rule of ARIA - Don't use ARIA!"
