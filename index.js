@@ -1,3 +1,6 @@
+/**
+ * @license MIT
+ */
 
 import { A11yAware } from './lib/A11yAware.js';
 import { A11yAwareElement } from './lib/A11yAwareElement.js';
