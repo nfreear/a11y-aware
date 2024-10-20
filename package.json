@@ -1,20 +1,20 @@
 {
   "name": "a11y-aware",
   "version": "0.3.0",
-  "description": "A micro-library that rewards accessible, semantic HTML5 and minimal, well-formed ARIA!",
+  "description": "Micro-library & custom element that rewards accessible, semantic HTML and minimal, well-formed ARIA!",
   "license": "MIT",
   "type": "module",
-  "browser": "./index.js",
-  "main": "./index.js",
+  "browser": "index.js",
+  "main": "index.js",
   "author": "Nick Freear",
   "keywords": [
     "Accessibility", "A11y", "ARIA", "assert", "assertion",
     "custom element", "element", "web component"
   ],
-  "files": [ "lib/*", "test/*" ],
+  "files": [ "lib", "test" ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nfreear/a11y-aware.git"
+    "url": "git+https://github.com/nfreear/a11y-aware.git"
   },
   "bugs": {
     "url": "https://github.com/nfreear/a11y-aware/issues"
