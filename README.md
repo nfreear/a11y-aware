@@ -31,7 +31,9 @@ buttonProxy.addToggleListener();
 
 … To show and hide the dialog box, while correctly updating the state of the ARIA attributes, for example, `aria-expanded`.
 
-Missing or incorrect ARIA is reported via [assertion][] errors in the browser console.
+Missing or incorrect ARIA is reported via helpful [assertion][] errors in the browser console.
+
+Aligning functionality with [accessibility][intro] has to be a good thing 💡♿️
 
 Neat, huh?
 
@@ -51,7 +53,7 @@ The library exports the `<a11y-aware>` custom element – see the [demo][elem-de
 
 ## Guided mode
 
-Make accessibility issues more visible with the [guided][] mode:
+And, you can make accessibility issues more visible with a [guided][] mode:
 
 ```html
 <a11y-aware guided="true">
@@ -74,6 +76,7 @@ The library currently tests for and/or supports(*) the following HTML elements a
 [elem-demo]: https://nfreear.github.io/a11y-aware/test/good.elem.html
 [guided]: https://nfreear.github.io/a11y-aware/test/guided.html
 [pen demo]: https://codepen.io/nfreear/pen/poMbKzj
+[intro]: https://www.w3.org/WAI/fundamentals/accessibility-intro/
 [rule1]: https://www.w3.org/TR/using-aria/#rule1
   "First rule of ARIA - Don't use ARIA!"
 [guidance]: https://www.w3.org/TR/html-aria/#author-guidance-to-avoid-incorrect-use-of-aria
@@ -86,6 +89,7 @@ The library currently tests for and/or supports(*) the following HTML elements a
 [aria-haspopup]: https://w3.org/TR/wai-aria-1.2/#aria-haspopup
 [listbox]: https://w3.org/TR/wai-aria-1.2/#listbox
 [assertion]: https://developer.mozilla.org/en-US/docs/Web/API/console/assert_static
+  "console.assert() function, MDN"
 [dlg-elem]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 [hidden]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden
   "'hidden' global attribute, MDN"
@@ -93,6 +97,9 @@ The library currently tests for and/or supports(*) the following HTML elements a
 [pen orig]: https://codepen.io/nfreear/pen/VwoeGpx
 [accname]: https://github.com/google/accessible-name
 [dom-accessibility-api]: https://github.com/eps1lon/dom-accessibility-api
+[defence]: https://pythonmania.org/assertions-and-defensive-programming-with-examples/
+  "Assertions and Defensive Programming (With Examples)"
+[emoji]: https://gitmoji.dev/
 
 [ci]: https://github.com/nfreear/a11y-aware/actions/workflows/node.js.yml
 [ci-badge]: https://github.com/nfreear/a11y-aware/actions/workflows/node.js.yml/badge.svg
